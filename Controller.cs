@@ -25,7 +25,7 @@ namespace MyMVC.Controllers				// replace with your namespace which encapsulates
 				draw = model.draw,
 				recordsTotal = result.TotalResultsCount,
 				recordsFiltered = result.FilteredResultsCount,
-				data = result.ProjectCodesList,
+				data = result.List,
 			},
 			JsonRequestBehavior.AllowGet);
 		}
