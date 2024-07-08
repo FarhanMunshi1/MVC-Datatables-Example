@@ -1,0 +1,28 @@
+@* Example of datatable where were showing students *@
+<title>Students</title>
+
+<link rel="stylesheet" href="Datatables.css" />			@* Change to your css file location *@
+<script src="jquery.dataTables.min.js"></script>		@* Change to your js file location *@
+
+<div id="body">
+    
+    <input style="float:right" id="SearchBox" type="text" placeholder="Search..">
+
+    <table id="my-table" class="table table-striped dt-responsive nowrap w-100">
+        @* Table format *@
+
+        <thead>
+            <tr>
+                @* Column names *@
+                <th> Student ID</th>
+                <th> Name</th>
+                <th> Age </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @* We'll populate the body by getting data from Jquery *@
+        </tbody>
+    </table>
+    <br />
+</div>
