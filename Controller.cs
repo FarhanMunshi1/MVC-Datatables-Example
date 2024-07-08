@@ -17,7 +17,7 @@ namespace MyMVC.Controllers				// replace with your namespace which encapsulates
 		public JsonResult GetData(DataTableAjaxPostModel model, string searchString, int customValue)
 		{
 			// get data from the model class. (here a private instance of a class called "m_apiModel"
-			var result = m_apiModel.GetDataForDatatable(model, searchString, customValue );
+			var result = m_apiModel.GetDataForDatatable(model, searchString, customValue);
 			
 			// send back to Jquery as jSON
 			return Json(new
