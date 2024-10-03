@@ -17,7 +17,7 @@ function CreateTable() {
         "searching": false,
         "ajax": {
             url: "/home/GetData",                          //where Ajax will get the data
-            type: 'POST',                                   //send a POST request
+            type: 'GET',                                   //send a POST request
             "dataSrc": function (json) {
                 UpdatePageWithResults(json);                //The data is in JSON form
                 return json.data;
