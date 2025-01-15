@@ -17,8 +17,8 @@ function CreateTable() {
         "searching": false,
         "ajax": {
             url: "/home/GetData",                          //where Ajax will get the data
-            type: 'GET',                                   //send a POST request
-            "dataSrc": function (json) {
+            type: 'GET',                  //Sometimes need to change this to POST as the request string could be too long for a GET request. If you're getting 404 try this.
+            "dataSrc": function (json) {	           
                 UpdatePageWithResults(json);                //The data is in JSON form
                 return json.data;
             },
